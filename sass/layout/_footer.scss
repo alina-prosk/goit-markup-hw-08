@@ -2,6 +2,14 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--main-title-color);
+    text-align: center;
+    @include desktop {
+        text-align: left;
+    }
+}
+
+.footer-position, .footer-social{
+    margin-bottom: 60px;
 }
 
 
@@ -33,14 +41,26 @@
 }
 
 .footer-container {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+        
+    }
+        @include desktop {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
 }
+ //   display: flex;
+  //  align-items: baseline;
+ //   justify-content: space-between;
+//}
 
-.footer-social {
-    margin-left: 70px;
-}
+//.footer-social {
+ //   margin-left: 70px;
+//}
 
 .social-title {
     font-size: 14px;
@@ -94,7 +114,15 @@
 
 .input-email {
     display: block;
-    width: 358px;
+    width: 100%;
+    @include tablet{
+        max-width: 450px;
+    }
+        @include desktop {
+            width: 358px;
+            margin-bottom: 0;
+            margin-right: 12px;
+        }
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -103,16 +131,22 @@
     background-color: transparent;
     outline: transparent;
     color: #FFFFFF;
-    margin-right: 12px;
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .form-input {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
     margin-left: auto;
+    justify-content: center;
+    @include desktop {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
 }
 
 .form-input-btn {
