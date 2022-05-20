@@ -5,17 +5,18 @@
         url(../images/img-hero.jpg);
     background-size: cover;
     margin: 0 auto;
+    max-width: 1600px;
     @include mobile {
-max-width: 480px;
+
 padding-top: 60px;
 padding-bottom: 60px;
     }
     @include tablet {
-        max-width: 768px;
+   
         padding-top: 118px;
         padding-bottom: 118px;}
     @include desktop {
-        max-width: 1200px;
+    
         padding-top: 200px;
         padding-bottom: 200px;
     }
