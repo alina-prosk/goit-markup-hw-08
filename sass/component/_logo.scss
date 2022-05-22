@@ -6,7 +6,12 @@
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: #000000;
+    padding: 15px 0;
+    @include tablet{
+    padding: 26px 0;}
+    @include desktop{
     padding: 24px 0;
+    }
 }
 
 
