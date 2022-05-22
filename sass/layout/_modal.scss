@@ -9,8 +9,8 @@
 }
 
 .modal {
-    width: 528px;
-    min-height: 581px;
+    width: 450px;
+    min-height: 609px;
     background-color: #FFFFFF;
     padding: 40px;
     border-radius: 4px;
@@ -21,6 +21,10 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+        @include desktop{
+            width: 528px;
+            min-height: 581px;
+        }
 }
 
 .backdrop.is-hidden .modal {
@@ -115,7 +119,7 @@
 }
 
 .comment-text {
-    width: 448px;
+    width: 370px;
     height: 120px;
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -137,6 +141,9 @@
             line-height: 1.14;
             letter-spacing: 0.01em;
             color: rgba(117, 117, 117, 0.5);
+        }
+        @include desktop{
+            width: 448px;
         }
 }
 
@@ -165,8 +172,10 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
-    padding-left: 7px;
     margin-bottom: 30px;
+    @include desktop{
+        padding-left: 7px;
+    }
 
 }
 
@@ -185,9 +194,9 @@
             border: none;
     
         }
-   .checkbox:focus+& {
-       border-color: var(--focus-color);
-   }
+.checkbox:focus+& {
+    border-color: var(--focus-color);
+}
 }
 
 .check-icon {
@@ -199,18 +208,26 @@
 }
 
 .modal-policy {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: #757575;
+    @include desktop{
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 
 .modal-text {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: #2196F3;
+    @include desktop {
+            font-size: 14px;
+            line-height: 1.71;
+        }
 }
 
 .modal-btn {
