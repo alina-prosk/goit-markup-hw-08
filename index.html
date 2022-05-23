@@ -180,7 +180,21 @@
         <h3 class="team__title title">Наша команда</h3>
     <ul class="team-list list">
             <li class="team-list__card">
-                <img src="./images/img-1.jpg" alt="Игорь" width="270"/>
+                <picture>
+                    <source srcset="
+                                    ./images/img-1.jpg  1x,
+                                    ./images/img-1-2xdeck.jpg 2x"
+                                    media="(min-width:1200px)" />
+                    <source srcset="
+                                    ./images/img-1-tab.jpg    1x,
+                                    ./images/img-1-2xtab.jpg 2x" 
+                                    media="(min-width:768px)" />
+                    <source srcset="
+                                    ./images/img-1-mob.jpg    1x,
+                                    ./images/img-1-2xmob.jpg 2x" 
+                                    media="(min-width:320px)" />
+                                <img src="./images/img-1.jpg" alt="Игорь" />
+                </picture>
                 <div class="team-list__container">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
             <p lang="en" class="team-list__position">Product Designer</p>
@@ -217,7 +231,19 @@
     </div>
         </li>
             <li class="team-list__card">
-                <img src="./images/img-2.jpg" alt="Ольга" width="270" class="profesional-img"/>
+                <picture>
+                    <source srcset="
+                                                    ./images/img-2.jpg  1x,
+                                                    ./images/img-2-2xdeck.jpg 2x" media="(min-width:1200px)" />
+                    <source srcset="
+                                                    ./images/img-2-tab.jpg    1x,
+                                                    ./images/img-2-2xtab.jpg 2x" media="(min-width:768px)" />
+                    <source srcset="
+                                                    ./images/img-2-mob.jpg    1x,
+                                                    ./images/img-2-2xmob.jpg 2x" media="(min-width:320px)" />
+                    <img src="./images/img-2.jpg" alt="Ольга"class="profesional-img" />
+                </picture>
+                
                 <div class="team-list__container">
                 <h3 class="team-list__name">Ольга Репина</h3>
             <p lang="en" class="team-list__position">Frontend Developer</p>
@@ -254,7 +280,18 @@
                 </div>
         </li>
             <li class="team-list__card">
-                <img src="./images/img-3.jpg" alt="Николай" width="270" class="profesional-img"/>
+                <picture>
+                    <source srcset="
+                        ./images/img-3.jpg  1x,
+                        ./images/img-3-2xdeck.jpg 2x" media="(min-width:1200px)" />
+                    <source srcset="
+                        ./images/img-3-tab.jpg    1x,
+                        ./images/img-3-2xtab.jpg 2x" media="(min-width:768px)" />
+                    <source srcset="
+                        ./images/img-3-mob.jpg    1x,
+                        ./images/img-3-2xmob.jpg 2x" media="(min-width:320px)" />
+                    <img src="./images/img-3.jpg" alt="Николай" class="profesional-img" />
+                </picture>
                 <div class="team-list__container">
                 <h3 class="team-list__name">Николай Тарасов</h3>
             <p lang="en" class="team-list__position">Marketing</p>
@@ -291,7 +328,18 @@
                 </div>
         </li>
             <li class="team-list__card">
-                <img src="./images/img-4.jpg" alt="Михаил" width="270" class="profesional-img"/>
+                <picture>
+                    <source srcset="
+                    ./images/img-4.jpg  1x,
+                    ./images/img-4-2xdeck.jpg 2x" media="(min-width:1200px)" />
+                    <source srcset="
+                    ./images/img-4-tab.jpg    1x,
+                    ./images/img-4-2xtab.jpg 2x" media="(min-width:768px)" />
+                    <source srcset="
+                    ./images/img-4-mob.jpg    1x,
+                    ./images/img-4-2xmob.jpg 2x" media="(min-width:320px)" />
+                    <img src="./images/img-4.jpg" alt="Михаил" class="profesional-img" />
+                </picture>
                 <div class="team-list__container">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
             <p lang="en" class="team-list__position">UI Designer</p>
