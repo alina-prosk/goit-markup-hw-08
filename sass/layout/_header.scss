@@ -40,8 +40,8 @@
         }
 }
 
+
 .navigation-link {
-    display: flex;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -49,13 +49,10 @@
     color: var(--h-color);
     fill: currentColor;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    @include desktop{
-        padding-top: 32px;
-        padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     }
-}
+
 
 .menu {
     display: block;
@@ -134,11 +131,9 @@
 }
 
 .menu-open-btn, .menu-close-btn {
-    display: flex;
     margin-left: auto;
-    position: absolute;
         left: 0;
-        right: 10px;
+        right: 15px;
         padding-top: 10px;
         padding-bottom: 10px;
         height: 40px;
