@@ -320,7 +320,6 @@ body {
   margin-left: auto;
   left: 0;
   right: 15px;
-  padding-top: 10px;
   padding-bottom: 10px;
   height: 40px;
   width: 40px;
@@ -351,6 +350,7 @@ body {
 }
 
 .menu-toggle {
+  flex-shrink: 0;
   background: transparent;
   border: none;
   display: flex;
