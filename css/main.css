@@ -196,7 +196,7 @@ body {
 
 .email {
   padding-top: 20px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 1200px) {
   .email {
@@ -369,6 +369,11 @@ body {
     display: none;
   }
 }
+.mob-contact {
+  display: flex;
+  flex-direction: column;
+}
+
 .mob-menu-link {
   font-weight: 500;
   font-size: 40px;
@@ -379,6 +384,10 @@ body {
 
 .mob-menu-item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mob-menu-item:not(:first-child) {
+  margin-bottom: 64px;
 }
 
 .current {
