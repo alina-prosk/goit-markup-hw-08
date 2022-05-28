@@ -1,13 +1,10 @@
 .header {
     background-color: var(--text-bacground-color);
     border-bottom: 1px solid #ECECEC;
+    
 .container {
     display: flex;
-        align-items: center;
-        justify-content: space-between;
-    @include desktop{
-    justify-content: space-between;}
-        }
+        align-items: center;}
 }
 
 .header-nav {
@@ -66,7 +63,7 @@ margin-bottom: 10px;
     @include tablet{
         display: inline-block;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        margin-left: auto;
     }
     @include desktop {
             display: flex;
